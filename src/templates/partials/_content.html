@@ -1,0 +1,99 @@
+<!-- begin section -->
+<div class="section">
+	<div class="container">
+		<div class="content">
+			<div class="section__left">
+				<div class="gallery-product">
+					<div class="gallery-nav js-gallery-nav">
+						<div class="gallery-nav__item">
+							<img src="img/photo.png" alt="photo">
+						</div>
+						<div class="gallery-nav__item">
+							<img src="img/photo-2.png" alt="photo">
+						</div>
+						<div class="gallery-nav__item">
+							<img src="img/photo.png" alt="photo">
+						</div>
+						<div class="gallery__item">
+							<img src="img/photo-zoom.png" alt="photo">
+						</div>
+					</div>
+					<div class="gallery js-gallery">
+						<div class="gallery__item">
+							<img src="img/big-photo.png" alt="photo"></div>
+						<div class="gallery__item">
+							<img src="img/photo.png" alt="photo"></div>
+						<div class="gallery__item">
+							<img src="img/photo-2.png" alt=""></div>
+						<!-- begin effect zoom -->
+						<div class="gallery__item">
+							<img src="img/product-zoom.jpg" alt="photo">
+						</div>
+						<!--end effect zoom-->
+					</div>
+				</div>
+			</div>
+			<div class="section__right">
+				<div class="product-info">
+					<a href="#" class="product-info__link">
+						<img src="img/man-icon.png" alt="" class="man-icon">
+						<span>Men Clothes > Coat & Jacket</span>
+					</a>
+					<div class="product-info__title">
+						<h2 class="h2">Lightweight nylon knitweat in black</h2>
+					</div>
+					<div class="product-info__price">$48.00</div>
+					<div class="product-info__description">
+						<h3 class="h3 h3_mar">Description</h3>
+						<div class="textual">
+							<p>
+								Cras efficitur iaculis sapien, ve l tincidunt magnaegestas at. Nunc finibus, metus 	id fermentum. Cras efficitur iaculis sapien, vel tincidunt magna egestas at, vel tincidunt magna 		egestas at cras effcitur.
+								<br>
+								Cras efficitur iaculis sapien, vel tincidunt magna egestas at. Nunc finibus, metus id fermentum.
+							</p>
+						</div>
+					</div>
+					<div class="product-info__colors">
+						<h3 class="h3 h3_marb">Colors</h3>
+						<div class="colors">
+							<div class="colors__select colors__select_blue">
+								<input type="radio" name="colors" id="blue" value="1">
+								<label for="blue">Blue</label>
+							</div>
+							<div class="colors__select colors__select_brown">
+								<input type="radio" name="colors" id="brown" value="2">
+								<label for="brown">Brown</label>
+							</div>
+						</div>
+					</div>
+					<button class="button">Buy now - $78</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end section -->
+<div class="footer">
+	<h4 class="h4">We thought</h4>
+	<h5 class="footer__title">You might like these too...</h5>
+	<!-- begin inner-slider -->
+	<div class="inner-slider js-inner-slider">
+		{% for item in slider %}
+		<div class="inner-slider__item">
+			<img src="{{item.img}}" alt="product">
+			<div class="section product">
+				<div class="section__left">
+					<div class="product__name">{{item.name}}</div>
+					<div class="product__group">
+						<h4 class="h4">{{item.group}}</h4>
+					</div>
+				</div>
+				<div class="section__right">
+					<div class="product__price">{{item.price}}</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+<!-- end inner-slider -->
+</div>

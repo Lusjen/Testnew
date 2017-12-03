@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- 
+	<h1></h1>
+ -->
+      <!-- <p>Hello from partials/_header.html</p>
+-->
+      <!-- begin header -->
+      <div class="header js-background">
+        <div class="container">
+          <!-- begin header-top -->
+          <div class="header-top">
+            <div class="header-top__left">
+              <div class="logo"> <a href="#">
+						<img src="img/logo.png" alt="logo"></a> </div>
+              <ul class="nav">
+                <li class="nav__item is-active"> <a href="#" class="nav__link">Home</a> </li>
+                <li class="nav__item"> <a href="#" class="nav__link">Products</a> </li>
+                <li class="nav__item"> <a href="#" class="nav__link">Lookbook</a> </li>
+                <li class="nav__item"> <a href="#" class="nav__link">Colection</a> </li>
+              </ul>
+            </div>
+            <div class="header-top__right">
+              <div class="products-item"> <a href="#" class="products-item__name">Bag</a> <a href="#" class="products-item__number">3</a> </div>
+              <div class="account"> <a href="#" class="account__login">Login</a> <span>|</span> <a href="#" class="account__sing-upe">Sing up</a> </div>
+            </div>
+            <!-- </div>-->
+          </div>
+          <!--end header-top-->
+          <!-- begin header-bottom -->
+          <div class="header-bottom">
+            <div class="menu-mobile">
+              <div class="hamburger"> <span></span> </div> <button class="cross"></button> <button class="cross"></button>
+              <ul class="nav-mobile">
+                <li class="nav-mobile__item"> <a href="#" class="nav__link is-active">Home</a> </li>
+                <li class="nav-mobile__item"> <a href="#" class="nav__link">Products</a> </li>
+                <li class="nav-mobile__item"> <a href="#" class="nav__link">Lookbook</a> </li>
+                <li class="nav-mobile__item"> <a href="#" class="nav__link">Colection</a> </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end header-bottom -->
+        </div>
+      </div>
+      <!-- end header -->
+      <!-- begin section -->
+      <div class="section">
+        <div class="container">
+          <div class="content">
+            <div class="section__left">
+              <div class="gallery-product">
+                <div class="gallery-nav js-gallery-nav">
+                  <div class="gallery-nav__item"> <img src="img/photo.png" alt="photo"> </div>
+                  <div class="gallery-nav__item"> <img src="img/photo-2.png" alt="photo"> </div>
+                  <div class="gallery-nav__item"> <img src="img/photo.png" alt="photo"> </div>
+                  <div class="gallery__item"> <img src="img/photo-zoom.png" alt="photo"> </div>
+                </div>
+                <div class="gallery js-gallery">
+                  <div class="gallery__item"> <img src="img/big-photo.png" alt="photo"></div>
+                  <div class="gallery__item"> <img src="img/photo.png" alt="photo"></div>
+                  <div class="gallery__item"> <img src="img/photo-2.png" alt=""></div>
+                  <!-- begin effect zoom -->
+                  <div class="gallery__item"> <img src="img/product-zoom.jpg" alt="photo"> </div>
+                  <!--end effect zoom-->
+                </div>
+              </div>
+            </div>
+            <div class="section__right">
+              <div class="product-info"> <a href="#" class="product-info__link">
+						<img src="img/man-icon.png" alt="" class="man-icon">
+						<span>Men Clothes > Coat & Jacket</span>
+					</a>
+                <div class="product-info__title">
+                  <h2 class="h2">Lightweight nylon knitweat in black</h2>
+                </div>
+                <div class="product-info__price">$48.00</div>
+                <div class="product-info__description">
+                  <h3 class="h3 h3_mar">Description</h3>
+                  <div class="textual">
+                    <p> Cras efficitur iaculis sapien, ve l tincidunt magnaegestas at. Nunc finibus, metus id fermentum. Cras efficitur iaculis sapien, vel tincidunt magna egestas at, vel tincidunt magna egestas at cras effcitur. <br> Cras efficitur iaculis
+                      sapien, vel tincidunt magna egestas at. Nunc finibus, metus id fermentum. </p>
+                  </div>
+                </div>
+                <div class="product-info__colors">
+                  <h3 class="h3 h3_marb">Colors</h3>
+                  <div class="colors">
+                    <div class="colors__select colors__select_blue"> <input type="radio" name="colors" id="blue" value="1"> <label for="blue">Blue</label> </div>
+                    <div class="colors__select colors__select_brown"> <input type="radio" name="colors" id="brown" value="2"> <label for="brown">Brown</label> </div>
+                  </div>
+                </div> <button class="button">Buy now - $78</button> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end section -->
+      <div class="footer">
+        <h4 class="h4">We thought</h4>
+        <h5 class="footer__title">You might like these too...</h5>
+        <!-- begin inner-slider -->
+        <div class="inner-slider js-inner-slider">
+          <div class="inner-slider__item"> <img src="img/product-1.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">LEATHER BAG</div>
+                <div class="product__group">
+                  <h4 class="h4">Bag</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-2.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">GIFT BOX COLORS</div>
+                <div class="product__group">
+                  <h4 class="h4">Gift</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-4.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">FLYKNIT LUNAR 3</div>
+                <div class="product__group">
+                  <h4 class="h4">Running Shoes</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-3.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">WALLETS LEATHER</div>
+                <div class="product__group">
+                  <h4 class="h4">Accessories</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-5.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">GIFT BOX COLORS</div>
+                <div class="product__group">
+                  <h4 class="h4">Running Shoes</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-1.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">LEATHER BAG</div>
+                <div class="product__group">
+                  <h4 class="h4">Bag</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-2.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">GIFT BOX COLORS</div>
+                <div class="product__group">
+                  <h4 class="h4">Gift</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-4.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">FLYKNIT LUNAR 3</div>
+                <div class="product__group">
+                  <h4 class="h4">Running Shoes</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-3.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">WALLETS LEATHER</div>
+                <div class="product__group">
+                  <h4 class="h4">Accessories</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-slider__item"> <img src="img/product-5.png" alt="product">
+            <div class="section product">
+              <div class="section__left">
+                <div class="product__name">GIFT BOX COLORS</div>
+                <div class="product__group">
+                  <h4 class="h4">Running Shoes</h4>
+                </div>
+              </div>
+              <div class="section__right">
+                <div class="product__price">$78</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end inner-slider -->
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
