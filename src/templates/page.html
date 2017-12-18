@@ -1,5 +1,18 @@
 ---
 <!-- title: Index page -->
+
+sliderGallery:
+ - img: img/photo.png
+ - img: img/photo-2.png
+ - img: img/photo.png
+ - img: img/photo-zoom.png
+
+sliderGalleryBig:
+ - img: img/big-photo.png
+ - img: img/photo.png
+ - img: img/photo-2.png
+ - img: img/product-zoom.jpg
+
 slider:
  - img: img/product-1.png
    name: LEATHER BAG
@@ -42,15 +55,15 @@ slider:
    group: Running Shoes
    price: $78
 ---
+ 
+{% extends "layouts/_layout.html" %}
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 	
 	<!-- {# variable example #}
-	<h1>{{title}}</h1>
- -->
+	<h1>{{title}}</h1>-->
 	
-	{# partial example #}
 	{% include "partials/_header.html" %}
 	{% include "partials/_content.html" %}
 

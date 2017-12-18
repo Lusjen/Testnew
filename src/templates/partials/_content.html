@@ -5,31 +5,18 @@
 			<div class="section__left">
 				<div class="gallery-product">
 					<div class="gallery-nav js-gallery-nav">
+						{% for item in sliderGallery %}
 						<div class="gallery-nav__item">
-							<img src="img/photo.png" alt="photo">
+							<img src="{{item.img}}" alt="photo">
 						</div>
-						<div class="gallery-nav__item">
-							<img src="img/photo-2.png" alt="photo">
-						</div>
-						<div class="gallery-nav__item">
-							<img src="img/photo.png" alt="photo">
-						</div>
-						<div class="gallery__item">
-							<img src="img/photo-zoom.png" alt="photo">
-						</div>
+						{% endfor %}			
 					</div>
 					<div class="gallery js-gallery">
+						{% for item in sliderGalleryBig %}
 						<div class="gallery__item">
-							<img src="img/big-photo.png" alt="photo"></div>
-						<div class="gallery__item">
-							<img src="img/photo.png" alt="photo"></div>
-						<div class="gallery__item">
-							<img src="img/photo-2.png" alt=""></div>
-						<!-- begin effect zoom -->
-						<div class="gallery__item">
-							<img src="img/product-zoom.jpg" alt="photo">
+							<img src="{{item.img}}" alt="photo">
 						</div>
-						<!--end effect zoom-->
+						{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -56,14 +43,8 @@
 					<div class="product-info__colors">
 						<h3 class="h3 h3_marb">Colors</h3>
 						<div class="colors">
-							<div class="colors__select colors__select_blue">
-								<input type="radio" name="colors" id="blue" value="1">
-								<label for="blue">Blue</label>
-							</div>
-							<div class="colors__select colors__select_brown">
-								<input type="radio" name="colors" id="brown" value="2">
-								<label for="brown">Brown</label>
-							</div>
+							{{ mixins.colorsSelect ( 'colors__select_blue', 'colors' , type = 'radio', 'blue' , '1' , 'blue' , 'Blue' ) }}
+							{{ mixins.colorsSelect ( 'colors__select_brown', 'colors' , type = 'radio', 'brown' , '2' , 'brown' ,  'Brown' ) }}
 						</div>
 					</div>
 					<button class="button">Buy now - $78</button>
@@ -79,7 +60,7 @@
 	<!-- begin inner-slider -->
 	<div class="inner-slider js-inner-slider">
 		{% for item in slider %}
-		<div class="inner-slider__item">
+		<a href="#" class="inner-slider__item">
 			<img src="{{item.img}}" alt="product">
 			<div class="section product">
 				<div class="section__left">
@@ -92,7 +73,7 @@
 					<div class="product__price">{{item.price}}</div>
 				</div>
 			</div>
-		</div>
+		</a>
 		{% endfor %}
 	</div>
 <!-- end inner-slider -->

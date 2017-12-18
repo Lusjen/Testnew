@@ -1,3 +1,7 @@
 {% macro icon(i) %}
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
+
+{% macro colorsSelect ( color , name , id , type ='text' ,  value , text , textb ) %}  
+<div class="colors__select {{ color }} "> <input type="{{ type }}" name="{{ name }}"  id="{{ id }}" value ="{{ value }}" /> <label for="{{ text }}"> {{ textb }} </label> </div> 
+{% endmacro %} 
